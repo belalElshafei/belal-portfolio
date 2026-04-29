@@ -17,17 +17,25 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "RoboDesk",
-        description: "Enterprise omnichannel customer support platform (Appout ITS). Centralizes and automates customer interactions across channels using AI to boost support efficiency at scale.",
-        tech: ["Node.js", "Express.js", "Redis", "MongoDB", "AngularJS"],
+        title: "Sanaiey App",
+        description: "Developed a full-stack craftsman service platform with a multi-role architecture for customers, technicians, and administrators. Engineered a dynamic bidding engine, implemented a secure OTP-based service completion workflow, and built a financial infrastructure with a digital wallet for automated commissions.",
+        tech: ["React Native", "Node.js", "Express", "MongoDB", "Akedly Shield", "Docker"],
         links: {},
         featured: true,
     },
     {
-        title: "Task Management API",
-        description: "Developed a RESTful API featuring JWT authentication, Redis caching for performance optimization, and MongoDB compound indexing. Integrated Docker for containerization and Sentry for real-time error tracking, ensuring a scalable and observable system architecture.",
-        tech: ["Node.js", "Express.js", "Redis", "Docker", "MongoDB"],
+        title: "RoboDesk",
+        description: "Enterprise omnichannel customer support platform (Appout ITS). Centralizes and automates customer interactions across channels using AI to boost support efficiency at scale.",
+        tech: ["Node.js", "Express.js", "Redis", "MongoDB", "AngularJS"],
+        links: {},
+        featured: false,
+    },
+    {
+        title: "Task Management App",
+        description: "Developed a full-stack task management application with a Next.js frontend and a RESTful Node.js/Express API. Implemented JWT authentication, Redis caching, and MongoDB compound indexing for performance. Containerized with Docker and integrated Sentry for observability.",
+        tech: ["Next.js", "Node.js", "Express.js", "Redis", "Docker", "MongoDB"],
         links: { github: "https://github.com/belalElshafei/task-management-api" },
+        featured: true,
     },
     {
         title: "5G Smart City (Graduation Project)",
