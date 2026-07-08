@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Terminal, Code2, Cpu } from "lucide-react";
 import NextImage from "next/image";
+import profileImg from "../../public/profile.jpg"
 
 export function Hero() {
     return (
@@ -22,11 +23,11 @@ export function Hero() {
                         <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl" />
                         <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
                             <NextImage
-                                src="/profile.jpg"
-                                alt="Belal Elshafei"
-                                fill
-                                className="object-cover object-top"
-                                priority
+                              src={profileImg}
+                              alt="Belal Elshafei"
+                              fill
+                              className="object-cover object-top"
+                              priority
                             />
                         </div>
                     </motion.div>
