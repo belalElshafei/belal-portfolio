@@ -1,7 +1,7 @@
 "use client";
 
 import { BentoCard, SectionHeader } from "./Structural";
-import { ExternalLink, Github, Layers, Globe, Code2 } from "lucide-react";
+import { ExternalLink, Github, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface Project {
@@ -28,6 +28,13 @@ const projects: Project[] = [
         description: "Enterprise omnichannel customer support platform (Appout ITS). Centralizes and automates customer interactions across channels using AI to boost support efficiency at scale.",
         tech: ["Node.js", "Express.js", "Redis", "MongoDB", "AngularJS"],
         links: {},
+        featured: false,
+    },
+    {
+        title: "Zafaran — Premium Online Food Ordering",
+        description: "Developed a full-stack, bilingual food ordering platform featuring dynamic LTR/RTL layouts with next-intl. Engineered real-time data persistence using MongoDB and Mongoose, secured by NextAuth.js and bcrypt hashing. Implemented persistent state management with Zustand for an interactive cart and multi-step checkout. Built a secure admin dashboard for menu management and order tracking, containerizing the complete application via Docker.",
+        tech: ["Next.js", "TypeScript", "MongoDB", "Zustand", "Docker"],
+        links: { github: "https://github.com/belalElshafei/zafaran-premium-food-ordering-app" },
         featured: false,
     },
     {
@@ -69,7 +76,7 @@ export function Projects() {
                             <div>
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 group-hover:scale-110 transition-transform">
-                                        {project.featured ? <Layers size={24} /> : <Code2 size={24} />}
+                                        <Code2 size={24} />
                                     </div>
                                     <div className="flex items-center gap-3">
                                         {project.links.github && (
